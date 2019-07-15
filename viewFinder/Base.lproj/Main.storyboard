@@ -49,7 +49,7 @@
         <!--Add New Pic-->
         <scene sceneID="obl-5H-iQz">
             <objects>
-                <viewController id="3EZ-pu-dxR" customClass="addPhotoViewController" customModule="viewFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3EZ-pu-dxR" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bv9-rj-jzQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,9 +76,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Camera"/>
-                                <connections>
-                                    <action selector="camera:" destination="3EZ-pu-dxR" eventType="touchUpInside" id="s5k-AB-WiK"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijU-MJ-iX0">
                                 <rect key="frame" x="135" y="607" width="144" height="56"/>
@@ -89,11 +86,8 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQ1-Bx-6Gm">
                                 <rect key="frame" x="287" y="603" width="82" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Albums"/>
-                                <connections>
-                                    <action selector="albumsTapped:" destination="3EZ-pu-dxR" eventType="touchUpInside" id="mdT-Cj-Id9"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
