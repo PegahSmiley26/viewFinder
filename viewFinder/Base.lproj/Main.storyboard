@@ -64,6 +64,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="captionText:" destination="ObV-Ah-Owq" eventType="editingDidEnd" id="nEO-nh-pkR"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfS-q5-A11">
                                 <rect key="frame" x="157" y="447" width="100" height="102"/>
@@ -96,6 +99,7 @@
                     <navigationItem key="navigationItem" title="Add New Pic" id="TID-nn-Ded"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q8z-xf-UmC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ObV-Ah-Owq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1802.8985507246377" y="172.76785714285714"/>
         </scene>

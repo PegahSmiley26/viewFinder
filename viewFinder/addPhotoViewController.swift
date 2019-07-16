@@ -12,11 +12,35 @@ class addPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
 
 
     
+    @IBOutlet weak var captionText: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
           //this tells our object that any info (aka photos) is going back to this class (self)
     }
+    
+//    func getPhotos() {
+//        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+//            // now we need to search through Core Data to find our photos/captions
+//
+////        if let coreDataPhotos = try? context.fetch(Photos.fetchRequest()) as? [Photos] {
+////
+////            if let unwrappedPhotos = coreDataPhotos {
+////                photos = unwrappedPhotos
+////                tableView.reloadData()
+////            }
+////
+////        }
+//        if let coreDataPhotos = try? context.fetch(Photos.fetchRequest()) as? [Photos] {
+//                photos = coreDataPhotos
+//            tableView.reloadData()
+//            }
+//
+    
+
+    
     
     var imagePicker = UIImagePickerController()
 
@@ -68,11 +92,72 @@ class addPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
             
             
             let photoToSave = Photos(entity: Photos.entity(), insertInto: context)
+                
+                photoToSave.caption = captionText.text
+            }
+            
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            
+            let photoToSave = Photos(entity: Photos.entity(), insertInto: context)
+            photoToSave.caption = captionText.text
+            
+            if let userImage = newImage.image {
+                if let userImageData = userImage.pngData() {
+                    photoToSave.imageData = userImageData
+                }
+            }
+            
         }
-    }
+
+
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            
+            let photoToSave = Photos(entity: Photos.entity(), insertInto: context)
+            
+            photoToSave.caption = captionText.text
+            
+            if let userImage = newImage.image {
+                
+                if let userImageData = userImage.pngData() {
+                    photoToSave.imageData = userImageData
+                }
+            }
+            (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+            
+        }
+
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            
+            let photoToSave = Photos(entity: Photos.entity(), insertInto: context)
+            
+            photoToSave.caption = captionText.text
+            
+            if let userImage = newImage.image {
+                
+                if let userImageData = userImage.pngData() {
+                    photoToSave.imageData = userImageData
+                }
+            }
+            (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+            
+            navigationController?.popViewController(animated: true)
+
+
+
+
+        }
+    
+    
+    
+    
+    
     
 }
+    
 
+        
+    }
 
+    
 
 
