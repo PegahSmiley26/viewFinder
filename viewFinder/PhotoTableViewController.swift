@@ -10,6 +10,7 @@ import UIKit
 
 class PhotoTableViewController: UITableViewController {
 
+//        var photo : Photos? = nil
         var photos : [Photos] = []
     
     override func viewDidLoad() {
@@ -23,9 +24,9 @@ class PhotoTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailSegue"{
-            if let photoDetailView = segue.destination as? PhotoTableViewController {
+            if let photoDetailView = segue.destination as? PhotoDetailViewController {
                 if let photoToSend = sender as? Photos {
-                    photoDetailView.photos = [photoToSend]
+                    photoDetailView.photos = photoToSend
                 }
             }
         }

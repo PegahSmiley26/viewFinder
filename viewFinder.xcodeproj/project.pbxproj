@@ -14,6 +14,7 @@
 		18BBE44922DD1A4E00BE5549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BBE44722DD1A4E00BE5549 /* LaunchScreen.storyboard */; };
 		18BBE45322DD2BFE00BE5549 /* addPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBE45222DD2BFE00BE5549 /* addPhotoViewController.swift */; };
 		18BBE45522DD332400BE5549 /* PhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBE45422DD332400BE5549 /* PhotoTableViewController.swift */; };
+		18BBE45722DE544200BE5549 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBE45622DE544200BE5549 /* PhotoDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		18BBE44A22DD1A4E00BE5549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BBE45222DD2BFE00BE5549 /* addPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPhotoViewController.swift; sourceTree = "<group>"; };
 		18BBE45422DD332400BE5549 /* PhotoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewController.swift; sourceTree = "<group>"; };
+		18BBE45622DE544200BE5549 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				18BBE43B22DD1A4D00BE5549 /* AppDelegate.swift */,
 				18BBE45222DD2BFE00BE5549 /* addPhotoViewController.swift */,
 				18BBE45422DD332400BE5549 /* PhotoTableViewController.swift */,
+				18BBE45622DE544200BE5549 /* PhotoDetailViewController.swift */,
 				18BBE43F22DD1A4D00BE5549 /* Main.storyboard */,
 				18BBE44522DD1A4E00BE5549 /* Assets.xcassets */,
 				18BBE44722DD1A4E00BE5549 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				18BBE44422DD1A4D00BE5549 /* viewFinder.xcdatamodeld in Sources */,
 				18BBE43C22DD1A4D00BE5549 /* AppDelegate.swift in Sources */,
 				18BBE45522DD332400BE5549 /* PhotoTableViewController.swift in Sources */,
+				18BBE45722DE544200BE5549 /* PhotoDetailViewController.swift in Sources */,
 				18BBE45322DD2BFE00BE5549 /* addPhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

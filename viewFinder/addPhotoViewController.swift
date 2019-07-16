@@ -84,8 +84,9 @@ class addPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
     
     internal func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
         //the selected Image will replace the stock photo in our Image View with the following code:
-        if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage { newImage.image =  selectedImage}
-        imagePicker.dismiss(animated: true, completion: nil) }
+        if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {newImage.image =  selectedImage}
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
 
     @IBAction func savePhotoTapped(_ sender: Any) {
         if let context = (UIApplication.shared.delegate as? AppDelegate)? .persistentContainer.viewContext {
